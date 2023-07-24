@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+/* headerSection */
+.headerSection{
+    background-color: #fff;
+}
+.menu ul {
+    text-align: center;
+}
+.menu ul li{ 
+    display: inline-block;
+}
+.menu ul li a {
+    color: black;
+    background: aqua;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .5s;
+}
+.menu ul li a:hover {
+    color: aqua;
+    background: #fff;
+}
+.menu ul li a::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: black;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
+
+}
+.menu ul li a:hover::after{
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+
+}
+/* bennerSection */
+.bennerSection {
+    background: #48dbfb;
+    text-align: center;
+    padding: 71px;
+    
+    
+}
+.benner{}
+.benner h3 {
+    color: white;
+    padding: 30px;
+    font-size: 24px;
+}
+.benner h1 {
+    color: white;
+    font-size: 46px;
+   
+}
+.myIcon{
+ font-size: 17px;
+ margin-right: 7px;
+}
+.btn {
+    background: #fff;
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: gray;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+    z-index: 1;
+   
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    z-index: -1;
+    transition: .5s;
+   
+}
+.btn:hover::before{
+    width: 100%;
+    
+}
+.btn:hover{
+    color: #fff;
+}
+
+/* serviceSection */
+.serviceSection {
+    text-align: center;
+    padding: 68px;
+   
+}
+
+.serviceSection h2{
+    text-transform: uppercase;
+}
+
+.imgBoox {
+    margin: 71px -5px;
+    
+    
+}
+
+.imgItem{
+    display: inline-block;
+    width: 22%;
+    margin: 10px;
+    transition: .5s;
+    overflow: hidden;
+}
+.imgItem:hover .img1{
+    transform: rotate(-360deg) scale(1.2);
+}
+.imgItem .img1{
+    transition: .5s;
+}
+.imgItem:hover .img2{
+    transform: rotate(30deg) scale(1.2);
+}
+.imgItem .img2{
+    transition: .5s;
+}
+.imgItem:hover .img3{
+    transform: rotate(-30deg) scale(1.2);
+}
+.imgItem .img3{
+    transition: .5s;
+}
+.imgItem:hover .img4{
+    transform: rotate(-30deg) scale(1.2);
+}
+.imgItem .img4{
+    transition: .5s;
+}
+.imgItem:hover .img5{
+    transform: rotate(30deg) scale(1.2);
+}
+.imgItem .img5{
+    transition: .5s;
+}
+.imgItem:hover .img6{
+    transform: rotate(-360deg) scale(1.2);
+}
+.imgItem .img6{
+    transition: .5s;
+}
+.imgItem:hover .img7{
+    transform:scale(1.4);
+}
+.imgItem .img7{
+    transition: .5s;
+}
+.imgItem:hover .img8{
+    transform:scale(1.4);
+}
+.imgItem .img8{
+    transition: .5s;
+}
+/* stepSection */
+.stepSection {
+    padding: 25px 0;
+    text-align: center;
+}
+.stepText h2 {
+    padding: 10px;
+    font-size: 39px;
+}
+.stepText p {
+    line-height: 2;
+    font-size: 15px;
+  
+}
+
+.stepText {
+    padding: 24px;
+}
+.step {
+    width: 7%;
+    margin: 11px 10%;
+    display: inline-block;
+    background: black;
+    padding: 10px 18px;
+    color: white;
+    transition: .5s;
+    font-size: 17px;
+}
+.design1{
+    transform: rotate(-30deg);
+}
+.design1:hover{
+    transform: scale(1.2);
+}
+
+.design2:hover{
+    transform: scale(1.3);
+}
+
+.design3{
+    transform: rotate(30deg);
+}
+.design3:hover{
+    transform: scale(1.2);
+}
+.step:hover{
+    background: aqua;
+    color: black;
+}
+/* footerSection */
+.footerSection {
+    background: #2e2f31;
+    text-align: center;
+    color: white;
+    padding: 16px 10px;
+    font-size: 15px;
+    font-weight: 9958;
+}
